@@ -1,0 +1,64 @@
+#parent nav {
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+  position: fixed;
+  bottom: 1em;
+  background-color: white;
+  height: 2em;
+  align-items: center;
+  border-radius: 0.5em;
+  font-size: 1.3em;
+}
+#parent nav button {
+  position: absolute;
+  border: none;
+  background-color: red;
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+  top: -3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 16px 3px rgb(236, 177, 177);
+  cursor: pointer;
+}
+#parent nav button:hover {
+  box-shadow: 0px 0px 16px 3px rgb(170, 43, 43);
+}
+#parent nav button:hover .add {
+  transition: all 0.3s ease-in-out;
+  transform: rotate(90deg);
+  scale: 1.8;
+}
+#parent nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+}
+#parent nav li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  list-style: none;
+  cursor: pointer;
+}
+#parent nav li.active {
+  color: red;
+}
+#parent nav li:hover {
+  color: lightcoral;
+}
+
+.home .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.home .todoList input[type=checkbox] {
+  transform: scale(1.5);
+}/*# sourceMappingURL=styles.css.map */
